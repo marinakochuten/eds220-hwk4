@@ -29,7 +29,7 @@ eds220-hwk4
 ```
 
 - hwk4-task2-fire-perimeter-kochuten.ipynb contains the code for wrangling historic, open-source fire perimeter data to a geospatial file containing only the boundary for the 2017 Thomas Fire.
-- hwk4-task2-false-color-kochuten.ipynb contains the code for the false color imagery and burn scar visualization.
+- hwk4-task2-false-color-kochuten.ipynb contains the code for creating false color imagery from Landsat data and burn scar visualization.
 - The data folder contains fire perimeter data from the State of California as well as the boundary for the 2017 Thomas Fire.
     
 ## Data details
