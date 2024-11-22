@@ -12,33 +12,25 @@ Using fire perimeter data from the State of California's Data Catalog and Landsa
 
 ```
 eds220-hwk4
-│   README.md
-│   hwk4-task2-fire-perimeter-kochuten.ipynb
-│   hwk4-task2-false-color-kochuten.ipynb
-│   .gitignore
-│
-└───data
-    ├── california_fire_perimeters
-    │   ├── california_fire_perimeters.cpg
-    │   ├── california_fire_perimeters.dbf
-    │   ├── california_fire_perimeters.prj
-    │   ├── california_fire_perimeters.shp
-    │   ├── california_fire_perimeters.shp.xml
-    │   └── california_fire_perimeters.shx
-    └─── thomas_fire_boundary.geojson
+├──  README.md
+├──  hwk4-task2-fire-perimeter-kochuten.ipynb
+├──  hwk4-task2-false-color-kochuten.ipynb
+└──  .gitignore
 ```
 
 - hwk4-task2-fire-perimeter-kochuten.ipynb contains the code for wrangling historic, open-source fire perimeter data to a geospatial file containing only the boundary for the 2017 Thomas Fire.
 - hwk4-task2-false-color-kochuten.ipynb contains the code for creating false color imagery from Landsat data and burn scar visualization.
-- The data folder contains fire perimeter data from the State of California as well as the boundary for the 2017 Thomas Fire.
     
 ## Data details
 
 **Fire perimeters:** I use California Fire Perimeter data from the State of California's Data Catalog to create thomas_fire_boundary.geojson. The dataset is updated annually and includes fire perimeters dating back to 1878. 
-- **Access:** To access this data, download the California_Fire_Perimeters (all) shapefile from this link: https://gis.data.cnra.ca.gov/api/download/v1/items/e3802d2abf8741a187e73a9db49d68fe/shapefile?layers=0. The code to create the boundary for the 2017 Thomas Fire from this shapefile is housed in hwk4-task2-fire-perimeter-kochuten.ipynb.
 
 **Landsat imagery:** I use a simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data, collected by the Landsat 8 satellite. The data was retrieved from the Microsoft Planetary Computer data catalogue and pre-processed by Dr. Carmen Galaz García to remove data outside land and coarsen the spatial resolution. 
-- **Access:** This data is housed in the EDS 220 class server. Within the server, the data can be accessed through this path: `/courses/EDS220/data/hwk4_landsat_data landsat8-2018-01-26-sb-simplified.nc`.
+
+*Note:* My data folder is in the .gitignore. To run my code, access the data and add to data folder from here:
+- **Fire perimeters:** Download the California_Fire_Perimeters (all) shapefile from this link: https://gis.data.cnra.ca.gov/api/download/v1/items/e3802d2abf8741a187e73a9db49d68fe/shapefile?layers=0. The code to create the boundary for the 2017 Thomas Fire from this shapefile is housed in hwk4-task2-fire-perimeter-kochuten.ipynb.
+- **Landsat imagery:** This data is housed in the EDS 220 class server. Within the server, the data can be accessed through this path: `/courses/EDS220/data/hwk4_landsat_data landsat8-2018-01-26-sb-simplified.nc`.
+ 
 
 ## References
 
